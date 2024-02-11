@@ -356,3 +356,11 @@ Received Import Request.
 Start importing Assets/Tiles/Platform Palette.prefab using Guid(a5bb6b0270c5d4d94a781c3cb69e350b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54b41145cae64ceb2fe00e2afe50f13f') in 0.093978 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 9949.456984 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b9326e97e2461385864aa44f9e28ada') in 0.039350 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
