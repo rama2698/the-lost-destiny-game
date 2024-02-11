@@ -340,3 +340,19 @@ Received Import Request.
 Start importing Assets/Sprites/SPA_Background brown tint.png using Guid(abd25cf6d4eb34aa290d8028c13bc811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e578a89613a9aebf0fccc8a530221aed') in 0.056810 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 306.794742 seconds.
+  path: Assets/Tiles
+  artifactKey: Guid(cd3e4bc08c7ca408daf4fe3280cc8f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles using Guid(cd3e4bc08c7ca408daf4fe3280cc8f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56ec3c215a83357ee8daf5964cfe07bf') in 0.001644 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 73.285489 seconds.
+  path: Assets/Tiles/Platform Palette.prefab
+  artifactKey: Guid(a5bb6b0270c5d4d94a781c3cb69e350b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles/Platform Palette.prefab using Guid(a5bb6b0270c5d4d94a781c3cb69e350b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54b41145cae64ceb2fe00e2afe50f13f') in 0.093978 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
