@@ -8,9 +8,11 @@ public class PlayerMovement : MonoBehaviour
     float playerSpeed = 5f;
     Vector2 moveInput;
     Rigidbody2D playerRigidBody;
+    Animator playerAnimator;
     void Start()
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
+        playerAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -27,6 +29,10 @@ public class PlayerMovement : MonoBehaviour
     void Run() {
         Vector2 playerVelocity = new Vector2(moveInput.x * playerSpeed, playerRigidBody.velocity.y);
         playerRigidBody.velocity = playerVelocity;
+        
+        bool hasHorizontalSpeed = Mathf.Abs(playerRigidBody.velocity.x) > Mathf.Epsilon;
+        playerAnimator.SetBool("isRunning", hasHorizontalSpeed);
+        
     }
 
     void FlipPlayer() {
