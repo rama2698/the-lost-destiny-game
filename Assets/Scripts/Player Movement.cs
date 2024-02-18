@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     float jumpSpeed = 14f;
     float climbSpeed = 5f;
     float initialGravityScale;
+    bool isAlive = true;
     Vector2 moveInput;
     Rigidbody2D playerRigidBody;
     Animator playerAnimator;
@@ -26,16 +27,20 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!isAlive){return;}
         Run();
         FlipPlayer();
         ClimbPlayer();
+        Die();
     }
 
     void OnMove(InputValue value) {
+        if(!isAlive){return;}
         moveInput = value.Get<Vector2>();
     }
 
     void OnJump(InputValue value) {
+        if(!isAlive){return;}
         if(playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")) && value.isPressed)
         {
             playerRigidBody.velocity += new Vector2(0f, jumpSpeed);
@@ -47,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Run() {
+        if(!isAlive){return;}
         Vector2 playerVelocity = new Vector2(moveInput.x * playerSpeed, playerRigidBody.velocity.y);
         playerRigidBody.velocity = playerVelocity;
         
@@ -64,6 +70,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void ClimbPlayer() {
+        if(!isAlive){return;}
         if(!playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ladder"))) {
             playerRigidBody.gravityScale = initialGravityScale;
             playerAnimator.SetBool("isClimbing", false);
@@ -76,5 +83,11 @@ public class PlayerMovement : MonoBehaviour
 
         bool hasVerticalSpeed = Mathf.Abs(playerRigidBody.velocity.y) > Mathf.Epsilon;
         playerAnimator.SetBool("isClimbing", hasVerticalSpeed);
+    }
+
+    void Die() {
+        if(playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Enemies"))) {
+            isAlive = false;
+        }
     }
 }
