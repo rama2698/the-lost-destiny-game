@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     float climbSpeed = 5f;
     float initialGravityScale;
     bool isAlive = true;
+    Vector2 deathKick = new Vector2 (20, 20);
     Vector2 moveInput;
     Rigidbody2D playerRigidBody;
     Animator playerAnimator;
@@ -89,6 +90,7 @@ public class PlayerMovement : MonoBehaviour
         if(playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Enemies"))) {
             isAlive = false;
             playerAnimator.SetTrigger("death");
+            playerRigidBody.velocity = deathKick;
         }
     }
 }
