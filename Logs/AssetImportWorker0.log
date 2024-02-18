@@ -5310,3 +5310,35 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3402.031491 seconds.
+  path: Assets/Sprites/TileVaniaMushroom.png
+  artifactKey: Guid(de5fa32b0030e4599a6c77ad6c312fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileVaniaMushroom.png using Guid(de5fa32b0030e4599a6c77ad6c312fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f39821dc6db3d5f47151798a40acacb') in 0.693894 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 54.512207 seconds.
+  path: Assets/Sprites/TileVaniaMushroom.png
+  artifactKey: Guid(de5fa32b0030e4599a6c77ad6c312fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileVaniaMushroom.png using Guid(de5fa32b0030e4599a6c77ad6c312fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde4543f3be5e2137d81d4cbfb5636b2') in 0.055463 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 149.830730 seconds.
+  path: Assets/Sprites/TileVaniaMushroom.png
+  artifactKey: Guid(de5fa32b0030e4599a6c77ad6c312fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/TileVaniaMushroom.png using Guid(de5fa32b0030e4599a6c77ad6c312fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '898cc2001a53002f82fbc0f22f5e6cf5') in 0.066975 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 46.005298 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f9b8d546529804a7aeef4261ce09d77') in 0.004960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
