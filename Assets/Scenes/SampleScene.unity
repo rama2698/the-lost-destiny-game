@@ -86298,10 +86298,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -7607235584180936194, guid: 620cf24fafdc2466d8448a5e89a017df, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 572b5d6aba2574a958dbee41c0c11a23, type: 2}
     - target: {fileID: 2711942299335185358, guid: 620cf24fafdc2466d8448a5e89a017df, type: 3}
       propertyPath: m_LocalPosition.x
       value: -28.79
@@ -86342,21 +86338,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2791475264206615209, guid: 620cf24fafdc2466d8448a5e89a017df, type: 3}
-      propertyPath: m_GravityScale
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2791475264206615209, guid: 620cf24fafdc2466d8448a5e89a017df, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3926258125312178670, guid: 620cf24fafdc2466d8448a5e89a017df, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926258125312178670, guid: 620cf24fafdc2466d8448a5e89a017df, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

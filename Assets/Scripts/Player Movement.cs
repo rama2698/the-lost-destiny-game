@@ -12,12 +12,14 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveInput;
     Rigidbody2D playerRigidBody;
     Animator playerAnimator;
-    CapsuleCollider2D playerCapsuleCollider;
+    CapsuleCollider2D playerBodyCollider;
+    BoxCollider2D playerFeetCollider;
     void Start()
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
-        playerCapsuleCollider = GetComponent<CapsuleCollider2D>();
+        playerBodyCollider = GetComponent<CapsuleCollider2D>();
+        playerFeetCollider = GetComponent<BoxCollider2D>();
         initialGravityScale = playerRigidBody.gravityScale;
     }
 
@@ -34,11 +36,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void OnJump(InputValue value) {
-        if(playerCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground")) && value.isPressed)
+        if(playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")) && value.isPressed)
         {
             playerRigidBody.velocity += new Vector2(0f, jumpSpeed);
         }
-        // if(playerCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ladder")) && value.isPressed)
+        // if(playerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Ladder")) && value.isPressed)
         // {
         //     playerRigidBody.velocity += new Vector2(0f, jumpSpeed);
         // }
@@ -62,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void ClimbPlayer() {
-        if(!playerCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ladder"))) {
+        if(!playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ladder"))) {
             playerRigidBody.gravityScale = initialGravityScale;
             playerAnimator.SetBool("isClimbing", false);
             return;
