@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     Animator playerAnimator;
     CapsuleCollider2D playerBodyCollider;
     BoxCollider2D playerFeetCollider;
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
     void Start()
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
@@ -38,6 +40,11 @@ public class PlayerMovement : MonoBehaviour
     void OnMove(InputValue value) {
         if(!isAlive){return;}
         moveInput = value.Get<Vector2>();
+    }
+
+    void OnFire(InputValue value) {
+        if(!isAlive){return;}
+        Instantiate(bullet, gun.position, transform.rotation);
     }
 
     void OnJump(InputValue value) {
